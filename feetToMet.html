@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="feet"/>
+<input type="button" value="Chuyen" onclick="convertFeetToMeter()">
+<p id="1"></p>
+<script>
+    function convertFeetToMeter() {
+        let feet =  document.getElementById('feet').value;
+        let meters = 0.305 * feet;
+        document.getElementById("1").innerHTML = meters;
+    }
+</script>
+
+</body>
+</html>
